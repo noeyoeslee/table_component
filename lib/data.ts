@@ -1,0 +1,60 @@
+import { User } from './types';
+
+export const sampleUsers: User[] = [
+  {
+    id: 1,
+    name: '김철수',
+    email: 'kim@example.com',
+    age: 28,
+    status: 'active',
+    joinDate: '2024-01-15',
+  },
+  {
+    id: 2,
+    name: '이영희',
+    email: 'lee@example.com',
+    age: 32,
+    status: 'active',
+    joinDate: '2023-06-20',
+  },
+  {
+    id: 3,
+    name: '박민수',
+    email: 'park@example.com',
+    age: 25,
+    status: 'inactive',
+    joinDate: '2024-03-10',
+  },
+  {
+    id: 4,
+    name: '정수진',
+    email: 'jung@example.com',
+    age: 31,
+    status: 'active',
+    joinDate: '2023-09-05',
+  },
+  {
+    id: 5,
+    name: '최현준',
+    email: 'choi@example.com',
+    age: 26,
+    status: 'inactive',
+    joinDate: '2024-02-14',
+  },
+  {
+    id: 6,
+    name: '송지은',
+    email: 'song@example.com',
+    age: 29,
+    status: 'active',
+    joinDate: '2023-11-30',
+  },
+  {
+    id: 7,
+    name: '한준호',
+    email: 'han@example.com',
+    age: 27,
+    status: 'active',
+    joinDate: '2024-01-20',
+  },
+];
