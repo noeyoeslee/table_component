@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import {
   MantineReactTable,
   useMantineReactTable,
@@ -8,6 +8,7 @@ import {
 } from 'mantine-react-table';
 import { Badge, Box } from '@mantine/core';
 import { User } from '@/lib/types';
+import { getTableOptions } from '@/tableConfig';
 
 interface UserTableProps {
   data: User[];
@@ -58,19 +59,7 @@ export function UserTable({ data }: UserTableProps) {
     []
   );
 
-  const table = useMantineReactTable({
-    columns,
-    data,
-    enableColumnActions: true,
-    enableColumnFilters: true,
-    enablePagination: true,
-    enableRowSelection: false,
-    enableSorting: true,
-    mantineTableProps: {
-      striped: 'odd',
-      highlightOnHover: true,
-    },
-  });
+  const table = useMantineReactTable(getTableOptions(data, columns));
 
   return (
     <Box>
